@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos_SimpleMVVM", "Cosmos_SimpleMVVM\Cosmos_SimpleMVVM.csproj", "{4F5CEC10-EFF4-44EC-BC4C-29C35A13B150}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F5CEC10-EFF4-44EC-BC4C-29C35A13B150}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F5CEC10-EFF4-44EC-BC4C-29C35A13B150}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F5CEC10-EFF4-44EC-BC4C-29C35A13B150}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F5CEC10-EFF4-44EC-BC4C-29C35A13B150}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5B452251-B878-437B-8ED3-0C44C81D1839}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,2 @@
+# SimpleMVVM_Cosmos
+SimpleMVVM参考自PureMVC与MVVM的设计理念，进行简易化改进的一个版本。

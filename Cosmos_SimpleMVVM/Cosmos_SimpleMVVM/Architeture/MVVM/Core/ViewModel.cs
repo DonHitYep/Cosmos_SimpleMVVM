@@ -80,7 +80,7 @@ namespace Cosmos.Mvvm
                 }
                 eventDict.TryGetValue(actionKey, out handlerList);
             }
-            cmd.ExecuteCommand(sender, notifyArgs);
+            cmd?.ExecuteCommand(sender, notifyArgs);
             if (handlerList != null)
             {
                 var length = handlerList.Count;

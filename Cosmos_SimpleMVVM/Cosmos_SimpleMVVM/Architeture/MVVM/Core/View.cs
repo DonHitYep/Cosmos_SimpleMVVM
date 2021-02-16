@@ -26,7 +26,7 @@ namespace Cosmos.Mvvm
                     var length = bindedKeys.Count;
                     for (int i = 0; i < length; i++)
                     {
-                        ViewModel.Instance.AddListener(bindedKeys[i], mediator.HandleEvent);
+                         ViewModel.Instance. AddListener(bindedKeys[i], mediator.HandleEvent);
                     }
                 }
             }
@@ -69,6 +69,6 @@ namespace Cosmos.Mvvm
         {
             ViewModel.Instance.Dispatch(actionKey, sender, notifyArgs);
         }
-        protected virtual void OnInitialization() { }
+        protected virtual void OnInitialization(){}
     }
 }

@@ -86,10 +86,10 @@ namespace Cosmos.Mvvm
                 var length = handlerList.Count;
                 for (int i = 0; i < length; i++)
                 {
-                    handlerList[i].Invoke(sender, notifyArgs);
+                    handlerList[i]?.Invoke(sender, notifyArgs);
                 }
             }
-            cmdQueue.Enqueue(cmd);
+            cmdQueue?.Enqueue(cmd);
         }
         internal virtual void AddListener(string actionKey, EventHandler<NotifyArgs> notifyHandler)
         {
@@ -97,7 +97,10 @@ namespace Cosmos.Mvvm
             {
                 IList<EventHandler<NotifyArgs>> handlerList;
                 if (!eventDict.TryGetValue(actionKey, out handlerList))
+                {
                     handlerList = new List<EventHandler<NotifyArgs>>();
+                    eventDict.Add(actionKey, handlerList);
+                }
                 if (!handlerList.Contains(notifyHandler))
                     handlerList.Add(notifyHandler);
             }

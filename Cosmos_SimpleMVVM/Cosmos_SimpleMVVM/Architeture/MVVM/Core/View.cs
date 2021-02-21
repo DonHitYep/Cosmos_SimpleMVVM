@@ -21,12 +21,13 @@ namespace Cosmos.Mvvm
                 {
                     mediatorDict.Add(mediator.MediatorName, mediator);
                     var bindedKeys = mediator.EventKeys;
-                    if (bindedKeys == null)
-                        return;
-                    var length = bindedKeys.Count;
-                    for (int i = 0; i < length; i++)
+                    if (bindedKeys != null)
                     {
-                         ViewModel.Instance. AddListener(bindedKeys[i], mediator.HandleEvent);
+                        var length = bindedKeys.Count;
+                        for (int i = 0; i < length; i++)
+                        {
+                            ViewModel.Instance.AddListener(bindedKeys[i], mediator.HandleEvent);
+                        }
                     }
                 }
             }
@@ -69,6 +70,6 @@ namespace Cosmos.Mvvm
         {
             ViewModel.Instance.Dispatch(actionKey, sender, notifyArgs);
         }
-        protected virtual void OnInitialization(){}
+        protected virtual void OnInitialization() { }
     }
 }
